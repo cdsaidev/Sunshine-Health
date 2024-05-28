@@ -22,10 +22,11 @@ const Appointments = () => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     fetchUserAppointments();
   }, []);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   //Create antd table
   const columns = [

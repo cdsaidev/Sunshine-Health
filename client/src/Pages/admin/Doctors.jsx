@@ -39,10 +39,11 @@ const Doctors = () => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     fetchAllDoctors();
   }, []);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   //Antd Table
   const columns = [

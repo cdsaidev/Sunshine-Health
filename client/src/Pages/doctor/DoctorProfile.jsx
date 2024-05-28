@@ -52,10 +52,11 @@ const DoctorProfile = () => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     fetchDoctorInfo();
   }, []);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   return (
     <>

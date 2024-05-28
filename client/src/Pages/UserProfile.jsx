@@ -21,10 +21,11 @@ const UserProfile = () => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     fetchUserInfo();
   }, []);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   return (
     <Layout>

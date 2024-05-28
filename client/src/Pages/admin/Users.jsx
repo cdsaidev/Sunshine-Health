@@ -25,10 +25,11 @@ const Users = () => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     fetchAllUsers();
   }, []);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   // antd table column
   const columns = [

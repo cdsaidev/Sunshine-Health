@@ -30,12 +30,13 @@ const ProtectedRoute = (props) => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     if (!user) {
       fetchUser();
     }
   }, [user]);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   if (localStorage.getItem("token")) {
     return props.children;

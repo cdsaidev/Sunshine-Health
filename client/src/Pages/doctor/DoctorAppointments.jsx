@@ -24,10 +24,11 @@ const DoctorAppointments = () => {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     fetchDoctorAppointments();
   }, []);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   //Handle Status
   const handleStatus = async (record, status) => {
