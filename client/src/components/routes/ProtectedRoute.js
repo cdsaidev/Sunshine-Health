@@ -30,6 +30,7 @@ const ProtectedRoute = (props) => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!user) {
       fetchUser();

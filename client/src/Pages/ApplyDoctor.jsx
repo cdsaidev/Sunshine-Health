@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { hideLoading, showLoading } from "../redux/spinnerSlice";
 import { applyDoctorAccount } from "../api/api";
-import moment from "moment";
 
 const ApplyDoctor = () => {
   const dispatch = useDispatch();
